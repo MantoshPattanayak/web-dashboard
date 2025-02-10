@@ -25,7 +25,7 @@ const viewRole = async (req, res) => {
       let paginatedShowAllRoles = showAllRoles.slice(offset, limit + offset);
       return res.status(statusCode.SUCCESS.code).json({
         message: "Show All roles",
-        Role: encrypt(JSON.stringify((paginatedShowAllRoles))),
+        Role: paginatedShowAllRoles,
       });
     } catch (err) {
       logger.error(`An error occurred: ${err.message}`); // Log the error
