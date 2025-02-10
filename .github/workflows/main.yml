@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies for ViewService
         run: |
-          cd backend/ViewService
+          cd Backend/ViewService
           npm install
 
     
