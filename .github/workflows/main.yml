@@ -21,7 +21,9 @@ jobs:
         with:
           node-version: '16'  # Replace with your required version
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies for ViewService
+        run: |
+          cd backend/ViewService
+          npm install
 
     
